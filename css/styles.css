@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	vertical-align: baseline;
+	font-size: 100%;
+}
+
+html {
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100%;
+	background: url(../img/bg.jpg);
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.navBar::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+h1 {
+	color: #fff;
+	font-size: 48px;
+}
+
+p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+nav {
+	height: 100px;
+	line-height: 100px;
+}
+
+nav a img {
+	vertical-align: middle;
+	width: 150px;
+	height: 25px;
+}
+
+header {
+	margin: 100px 0 200px 70px;
+}
+
+header p {
+	width: 60%;
+	margin-top: 10px;
+}
+
+.work {
+	text-align: center;
+	width: 100%;
+}
+
+.work img {
+	margin: 1%;
+	width: 45%;
+	transition: .3s ease;
+	-webkit-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+}
+
+.work img:hover {
+	transform: scale(1.02);
+	-webkit-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+}
+
+
+.header2 {
+	margin: 100px 0 200px 70px;
+}
+
+.header2 p {
+	width: 60%;
+	margin-top: 10px;
+}
+
+.work2 {
+	width: 100%;
+	text-align: center;
+}
+
+.work2 img {
+	margin: 1%;
+	width: 94%;
+	transition: .3s ease;
+	-webkit-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+}
+
+.work2 img:hover {
+	transform: scale(1.02);
+	-webkit-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.75);
+}
+
+footer p {
+	text-align: center;
+	color: grey;
+	margin: 60px auto;
+}
+
+@media only screen and (max-width: 991px) {
+	header {
+		text-align: left;
+		margin: 100px 0 100px 30px;
+	}
+	header h1 {
+		font-size: 36px;
+	}
+	header p {
+		font-size: 12px;
+		width: 90%;
+	}
+	.work img {
+		margin: 2%;
+		width: 90%;
+	}
+	.header2 {
+		margin: 100px 0 100px 30px;
+	}
+	.header2 h1 {
+		font-size: 36px;
+	}
+	.header2 p {
+		font-size: 12px;
+		width: 90%;
+	}
+	.work2 img {
+		margin: 2%;
+	}
+	nav {
+		margin: 0px 0 0px 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

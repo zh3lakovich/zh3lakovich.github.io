@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personal portfolio 2018-2019</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/nprogress.css">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+	
+	<div class="wrapper">
+		<nav class="navBar">
+			<a href="index.html">
+				<img class="anim" src="img/logo.png" alt="logo">
+			</a>
+		</nav>
+
+		<header>
+			<h1 class="anim">UI & UX Design</h1>
+			<p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</header>
+
+		<div class="work">
+			<a rel="simplebox" href="img/project1.jpg"><img class="anim" src="img/project1.jpg" alt="Первая работа"></a>
+			<a rel="simplebox" href="img/project2.jpg"><img class="anim" src="img/project2.jpg" alt="Вторая работа"></a>
+			<a rel="simplebox" href="img/project3.jpg"><img class="anim" src="img/project3.jpg" alt="Третья работа"></a>
+			<a rel="simplebox" href="img/project4.jpg"><img class="anim" src="img/project4.jpg" alt="Четвёртая работа"></a>
+		</div>
+
+		<div class="header2">
+			<h1 class="anim">Other Projects</h1>
+			<p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+
+		<div class="work2">
+			<a rel="simplebox" href="img/project5.jpg"><img class="anim" src="img/project5.jpg" alt="Пятая работа"></a>
+			<a rel="simplebox" href="img/project6.jpg"><img class="anim" src="img/project6.jpg" alt="Шестая работа"></a>
+		</div>
+
+		<footer>
+			<p class="anim">48 School's project</p>
+		</footer>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.anim');
+    </script>
+	<script type="text/javascript" src="simplebox_util.js"></script>
+	<script type="text/javascript">
+	(function(){
+	var boxes=[],els,i,l;
+	if(document.querySelectorAll){
+	els=document.querySelectorAll('a[rel=simplebox]');	
+	Box.getStyles('simplebox_css','simplebox.css');
+	Box.getScripts('simplebox_js','simplebox.js',function(){
+	simplebox.init();
+	for(i=0,l=els.length;i<l;++i)
+	simplebox.start(els[i]);
+	simplebox.start('a[rel=simplebox_group]');			
+	});
+	}
+	})();</script>
+	<script src="js/nprogress.js"></script>
+	<script>
+		$(document).ready (function () {
+			NProgress.start ();
+			setTimeout(function () {
+				NProgress.done ();
+
+			}, 4000);
+		});
+	</script>
+</body>
+</html>
